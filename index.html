@@ -51,7 +51,7 @@
     };
 
     function forEachFeature(feature, layer) {
-      var popupContent = '<div class="popup"><b>WWTP name</b> ' + '<br>' + feature.properties.WWTP_NAME + '<br>' + ' <b>Population served</b> ' + '<br>' + feature.properties.POP_SERVED + '</div>'
+      var popupContent = '<div class="popup"><b>Population served</b> ' + '<br>' + feature.properties.POP_SERVED + '</div>'
       layer.bindTooltip(feature.properties.WWTP_NAME, {
         direction: 'bottom',
         offset: L.point(10, 30),
